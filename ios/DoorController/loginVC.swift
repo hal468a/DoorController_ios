@@ -12,7 +12,7 @@ class loginVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //checkFace()
+        checkFace()
     }
     
     //禁止翻轉
