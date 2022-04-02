@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         return false
     }
     
+    @IBAction func faceid(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segue_controller", sender: self)
+    }
+    
     @IBAction func Up(_ sender: Any) {
         var url = NSURL(string: "http://192.168.0.243/test/1")
         var urlreq = NSURLRequest(url: url! as URL)

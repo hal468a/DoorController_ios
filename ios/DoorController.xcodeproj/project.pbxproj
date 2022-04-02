@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF037D6627F81FB20069C272 /* loginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF037D6527F81FB20069C272 /* loginVC.swift */; };
 		BF2FCF3427F6ED910008354B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FCF3327F6ED910008354B /* AppDelegate.swift */; };
 		BF2FCF3627F6ED910008354B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FCF3527F6ED910008354B /* SceneDelegate.swift */; };
 		BF2FCF3827F6ED910008354B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2FCF3727F6ED910008354B /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF037D6527F81FB20069C272 /* loginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginVC.swift; sourceTree = "<group>"; };
 		BF2FCF3027F6ED910008354B /* DoorController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF2FCF3327F6ED910008354B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF2FCF3527F6ED910008354B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				BF2FCF3527F6ED910008354B /* SceneDelegate.swift */,
 				BF2FCF3727F6ED910008354B /* ViewController.swift */,
 				BF2FCF3927F6ED910008354B /* Main.storyboard */,
+				BF037D6527F81FB20069C272 /* loginVC.swift */,
 				BF2FCF3C27F6ED930008354B /* Assets.xcassets */,
 				BF2FCF3E27F6ED930008354B /* LaunchScreen.storyboard */,
 				BF2FCF4127F6ED930008354B /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				BF2FCF3827F6ED910008354B /* ViewController.swift in Sources */,
 				BF2FCF3427F6ED910008354B /* AppDelegate.swift in Sources */,
+				BF037D6627F81FB20069C272 /* loginVC.swift in Sources */,
 				BF2FCF3627F6ED910008354B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
