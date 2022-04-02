@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Whz-dO-8xH">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -16,13 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-9p-vn5">
-                                <rect key="frame" x="57" y="280" width="277" height="284"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7q-9p-vn5">
+                                <rect key="frame" x="29" y="277.66666666666669" width="332" height="289.00000000000006"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="faceid" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="faceid" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="200"/>
-                                    <attributedString key="attributedTitle"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="faceid:" destination="Whz-dO-8xH" eventType="touchUpInside" id="qkN-7E-BCF"/>
@@ -31,6 +31,10 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gPZ-83-Jbz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b7q-9p-vn5" firstAttribute="centerX" secondItem="l2q-rd-8Je" secondAttribute="centerX" id="agK-1m-MiU"/>
+                            <constraint firstItem="b7q-9p-vn5" firstAttribute="centerY" secondItem="l2q-rd-8Je" secondAttribute="centerY" id="nUR-OG-cNf"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="segue_controller" id="it1-fy-nE4"/>
@@ -48,81 +52,146 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView hidden="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" paginationMode="leftToRight" id="z6G-Ip-gob">
-                                <rect key="frame" x="76" y="719" width="239" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-N2-G1l">
-                                <rect key="frame" x="143" y="155" width="104" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.up" catalog="system" cornerStyle="large">
-                                    <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                    </preferredSymbolConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDb-3z-7Dq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-Us-moa">
-                                <rect key="frame" x="143" y="418" width="104" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="stop" catalog="system" cornerStyle="large">
-                                    <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                    </preferredSymbolConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Lock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22G-13-OpP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWZ-bp-qbd">
-                                <rect key="frame" x="143" y="287" width="104" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="poweroff" catalog="system" cornerStyle="large">
-                                    <backgroundConfiguration key="background"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                    </preferredSymbolConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDy-S1-Jyw"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-9j-VDR">
-                                <rect key="frame" x="143" y="550" width="104" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" image="arrow.down" catalog="system" cornerStyle="large">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
-                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                    </preferredSymbolConfiguration>
-                                    <attributedString key="attributedTitle"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="Down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fe3-46-KCc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-aI-3Un">
-                                <rect key="frame" x="143" y="683" width="104" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="5BC-QE-PSv">
+                                <rect key="frame" x="0.0" y="44" width="390" height="722"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z88-jN-0bX" userLabel="ConsoleView">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="119.66666666666667"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3h2-aI-3Un">
+                                                <rect key="frame" x="195" y="59.666666666666671" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3h2-aI-3Un" firstAttribute="centerY" secondItem="z88-jN-0bX" secondAttribute="centerY" id="HRN-F1-RXb"/>
+                                            <constraint firstItem="3h2-aI-3Un" firstAttribute="centerX" secondItem="z88-jN-0bX" secondAttribute="centerX" id="iwS-rr-bgk"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6W-vd-VfM" userLabel="UpBtnView">
+                                        <rect key="frame" x="0.0" y="120.66666666666666" width="390" height="119.33333333333334"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ1-N2-G1l" userLabel="UpBtn">
+                                                <rect key="frame" x="142.66666666666666" y="9.6666666666666856" width="105" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="ex1-eZ-Vd9"/>
+                                                    <constraint firstAttribute="height" constant="100" id="jy2-rz-YXn"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="arrow.up" catalog="system" title="" cornerStyle="large">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    </preferredSymbolConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Up:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xDb-3z-7Dq"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="aQ1-N2-G1l" firstAttribute="centerY" secondItem="t6W-vd-VfM" secondAttribute="centerY" id="N0G-Fw-ewS"/>
+                                            <constraint firstItem="aQ1-N2-G1l" firstAttribute="centerX" secondItem="t6W-vd-VfM" secondAttribute="centerX" id="g0O-a8-e7B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w4Z-Ts-wol" userLabel="StopBtnView">
+                                        <rect key="frame" x="0.0" y="240.99999999999997" width="390" height="119.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWZ-bp-qbd" userLabel="StopBtn">
+                                                <rect key="frame" x="142.66666666666666" y="9.6666666666666856" width="105" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="did-wp-r96"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="lMb-YK-xWH"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="poweroff" catalog="system" title="" cornerStyle="large">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    </preferredSymbolConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Stop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lDy-S1-Jyw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qWZ-bp-qbd" firstAttribute="centerY" secondItem="w4Z-Ts-wol" secondAttribute="centerY" id="Pi8-h0-T8j"/>
+                                            <constraint firstItem="qWZ-bp-qbd" firstAttribute="centerX" secondItem="w4Z-Ts-wol" secondAttribute="centerX" id="f50-WU-SIc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lpk-bf-aEt" userLabel="LockBtnView">
+                                        <rect key="frame" x="0.0" y="361.66666666666669" width="390" height="119.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zR-Us-moa" userLabel="LockBtn">
+                                                <rect key="frame" x="142.66666666666666" y="9.6666666666666288" width="105" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="08j-33-b4d"/>
+                                                    <constraint firstAttribute="height" constant="100" id="blB-cQ-w9z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="stop" catalog="system" title="" cornerStyle="large">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    </preferredSymbolConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Lock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="22G-13-OpP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6zR-Us-moa" firstAttribute="centerY" secondItem="Lpk-bf-aEt" secondAttribute="centerY" id="6nf-zh-l5L"/>
+                                            <constraint firstItem="6zR-Us-moa" firstAttribute="centerX" secondItem="Lpk-bf-aEt" secondAttribute="centerX" id="dFa-eV-Eon"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8aO-TI-s7r" userLabel="DownBtnView">
+                                        <rect key="frame" x="0.0" y="482.00000000000006" width="390" height="119.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MUz-9j-VDR">
+                                                <rect key="frame" x="142.66666666666666" y="9.6666666666666288" width="105" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="mo9-3R-EuV"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="105" id="q3G-vz-7gw"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="arrow.down" catalog="system" title="" cornerStyle="large">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="font">
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    </preferredSymbolConfiguration>
+                                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="Down:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fe3-46-KCc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="MUz-9j-VDR" firstAttribute="centerX" secondItem="8aO-TI-s7r" secondAttribute="centerX" id="42s-V8-yKw"/>
+                                            <constraint firstItem="MUz-9j-VDR" firstAttribute="centerY" secondItem="8aO-TI-s7r" secondAttribute="centerY" id="iaK-Hy-dBA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zv8-tx-6ab" userLabel="WebView">
+                                        <rect key="frame" x="0.0" y="602.66666666666663" width="390" height="119.33333333333337"/>
+                                        <subviews>
+                                            <webView hidden="YES" contentMode="center" semanticContentAttribute="forceLeftToRight" paginationMode="leftToRight" id="z6G-Ip-gob">
+                                                <rect key="frame" x="28" y="30" width="334" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </webView>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5BC-QE-PSv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8sy-aP-Ao8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5BC-QE-PSv" secondAttribute="bottom" constant="24" id="9b3-Ma-xJ7"/>
+                            <constraint firstItem="5BC-QE-PSv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="E62-UY-sNc"/>
+                            <constraint firstItem="5BC-QE-PSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RY5-lL-qxB"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cSb-hd-7tP"/>
                     <connections>
                         <outlet property="Console" destination="3h2-aI-3Un" id="piz-Au-O77"/>
                         <outlet property="web" destination="z6G-Ip-gob" id="Fyh-jm-t1h"/>
@@ -130,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-386.15384615384613" y="118.72037914691943"/>
+            <point key="canvasLocation" x="-386.71875" y="118.59443631039531"/>
         </scene>
     </scenes>
     <resources>
