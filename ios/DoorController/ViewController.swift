@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Up(_ sender: Any) {
-        var url = NSURL(string: "http://192.168.0.243/test/1")
+        var url = NSURL(string: "http://192.168.0.243/Up")
         var urlreq = NSURLRequest(url: url! as URL)
         web.loadRequest(urlreq as URLRequest)
         Console.text = "Up"
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Stop(_ sender: Any) {
-        var url = NSURL(string: "http://192.168.0.243/test/0")
+        var url = NSURL(string: "http://192.168.0.243/Stop")
         var urlreq = NSURLRequest(url: url! as URL)
         web.loadRequest(urlreq as URLRequest)
         Console.text = "Stop"
