@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var web: UIWebView!
     @IBOutlet var Console: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Console.textAlignment = .center
@@ -22,32 +23,37 @@ class ViewController: UIViewController {
         return false
     }
     
+    
     @IBAction func faceid(_ sender: UIButton) {
         self.performSegue(withIdentifier: "segue_controller", sender: self)
     }
     
     @IBAction func Up(_ sender: Any) {
-        var url = NSURL(string: "http://192.168.0.243/Up")
-        var urlreq = NSURLRequest(url: url! as URL)
-        web.loadRequest(urlreq as URLRequest)
+        sendRequest(address: "http://192.168.0.243/Up")
         Console.text = "Up"
         
     }
     
     @IBAction func Stop(_ sender: Any) {
-        var url = NSURL(string: "http://192.168.0.243/Stop")
-        var urlreq = NSURLRequest(url: url! as URL)
-        web.loadRequest(urlreq as URLRequest)
+        sendRequest(address: "http://192.168.0.243/Stop")
         Console.text = "Stop"
         
     }
     
     @IBAction func Lock(_ sender: Any) {
+//        sendRequest(address: "http://192.168.0.243/Locked")
         Console.text = "Locked"
     }
     
     @IBAction func Down(_ sender: Any) {
+//        sendRequest(address: "http://192.168.0.243/Down")
         Console.text = "Down"
+    }
+    
+    func sendRequest(address: String){
+        var url = NSURL(string:address)
+        var urlreq = NSURLRequest(url: url! as URL)
+        web.loadRequest(urlreq as URLRequest)
     }
     
 }
