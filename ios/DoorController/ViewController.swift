@@ -29,24 +29,24 @@ class ViewController: UIViewController {
     }
     
     @IBAction func Up(_ sender: Any) {
-        sendRequest(address: "http://192.168.0.243/Up")
+        sendRequest(address: "http://192.168.0.73/Up")
         Console.text = "Up"
         
     }
     
     @IBAction func Stop(_ sender: Any) {
-        sendRequest(address: "http://192.168.0.243/Stop")
+        sendRequest(address: "http://192.168.0.73/Stop")
         Console.text = "Stop"
         
     }
     
     @IBAction func Lock(_ sender: Any) {
-//        sendRequest(address: "http://192.168.0.243/Locked")
+        sendRequest(address: "http://192.168.0.73/Locked")
         Console.text = "Locked"
     }
     
     @IBAction func Down(_ sender: Any) {
-//        sendRequest(address: "http://192.168.0.243/Down")
+        sendRequest(address: "http://192.168.0.73/Down")
         Console.text = "Down"
     }
     
